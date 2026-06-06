@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            height: 50px;
+            width: 100%;
+            background-color: yellowgreen;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        header aside {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        header aside a {
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        header aside a:hover {
+            transform: scale(1.1);
+        }
+
+        #product-container {
+            margin: 20px;
+            gap: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        #product-container .product-card {
+            background-color: aliceblue;
+            box-shadow: 0 0 5px grey;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            gap: 20px;
+            border-radius: 25px;
+        }
+
+        .product-card img {
+            height: 150px;
+            width: 150px;
+            border-radius: 25px;
+
+        }
+
+        #product-container .product-card:hover {
+            transform: scale(1.05);
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h2>Fresh and Cart</h2>
+        <aside class="productsData">
+            <a href="./HomePage.html">Home⭐</a>
+            <a href="./Products.html">Products 🔽</a>
+        </aside>
+    </header>
+
+    <!-- Product Container -->
+    <section id="product-container">
+
+    </section>
+
+
+    <!-- cart Total -->
+    <section class="cartSummary">
+        <h2 id="total"></h2>
+
+        <aside class="btns">
+            <button onclick="clearCart()">Clear Cart</button>
+            <button onclick="checkout()">Checkout</button>
+        </aside>
+    </section>
+</body>
+<script src="./cart.js"></script>
+
+</html>

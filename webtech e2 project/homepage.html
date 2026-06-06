@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbarContainer {
+            height: 70px;
+            width: 100%;
+            background-color: greenyellow;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .logoblock {
+            flex-basis: 15%;
+        }
+
+        .logoblock img {
+            height: 60px;
+            width: 100px;
+        }
+
+        .menuBlock {
+            padding: 10px;
+            flex-basis: 85%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .menuBlock a {
+            color: black;
+            text-decoration: none;
+            font-size: 22px;
+
+        }
+
+        .menuBlock a:hover {
+            transform: scale(1.2);
+        }
+
+        header {
+            height: 50px;
+            width: 100%;
+            background-color: yellowgreen;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        header aside {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        header aside a {
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        header aside a:hover {
+            transform: scale(1.1);
+        }
+
+        .firstContainer {
+            background-color: rgb(41, 236, 20);
+            padding: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .firstContainer h2{
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .firstContainer p{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .firstContainer  button{
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            background-color: greenyellow;
+        }
+        .firstContainer button:hover{
+            transform: scale(1.1);
+            background-color: rgb(173, 249, 20);
+        }
+        .secondContainer{
+            max-height: 300px;
+            display: flex;
+            align-items: center ;
+            justify-content: space-around;
+            margin: 25px;
+        }
+        .secondContainer .card-container{
+            height: 200px;
+            width: 200px;
+            background-color: white;
+            border-radius: 25px;
+            box-shadow: 0 0 5px grey;
+            display: flex;
+            flex-direction: column;
+            align-items: center ;
+            justify-content: space-around;
+        }
+        .secondContainer .card-container img{
+            height: 150px;
+            width: 150px;
+        }
+        .secondContainer .card-container:hover{
+            transform: scale(1.05);
+        }
+        footer{
+            height: 50px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            color: aliceblue;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbarContainer">
+        <aside class="logoblock">
+            <img src="https://png.pngtree.com/png-vector/20240807/ourmid/pngtree-juicy-fruits-and-vitamins-natural-organic-fruits-png-image_13146415.png"
+                alt="">
+        </aside>
+        <aside class="menuBlock">
+            <a href="./HomePage.html">Home</a>
+            <a href="">About Us</a>
+            <a href="">Contact Us</a>
+            <a href="./Login.html">Login</a>
+            <a href="./Signup.html">Register</a>
+        </aside>
+    </nav>
+    <!-- header Part -->
+    <header>
+        <h2>Fresh and Cart</h2>
+        <aside class="productsData">
+            <a href="./Products.html">Products🔽</a>
+            <a href="./cart.html">Cart 🛒</a>
+        </aside>
+    </header>
+    <!-- 1st Container -->
+    <section class="firstContainer">
+        <h2>Welcome to our Fresh Vegetable Shop</h2>
+        <p>Enjoy farm-fresg vegetable delivered to your doorstep within 2 hours.</p>
+        <p>All types of vegetables and fruits are available</p>
+        <button>Shop Now</button>
+    </section>
+    <!-- 2nd Container -->
+     <section class="secondContainer">
+        <aside class="card-container">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/red-fresh-apple-isolated-on-white-background-royalty-free-image-1627314996.jpg?crop=1.00xw:0.923xh;0,0.0486xh" alt="">
+            <h3>Apple</h3>
+        </aside>
+         <aside class="card-container">
+            <img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/12/9/035bcbdc-64fa-4a91-a272-2189156c9e10_1036_1.png" alt="">
+            <h3>Carrot</h3>
+        </aside>
+         <aside class="card-container">
+            <img src="https://www.bbassets.com/media/uploads/p/l/40130830_10-7-up-soft-drink-lemon.jpg" alt="">
+            <h3>7 Up</h3>
+        </aside>
+     </section>
+     <!-- footer  -->
+      <footer>
+        <h2>Thank You Visit Again -- Fresh and Cart❤️</h2>
+      </footer>
+</body>
+
+</html>
